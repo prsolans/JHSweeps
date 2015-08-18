@@ -23,6 +23,10 @@
     src         : url(fonts/HelveticaNeueLTStd-Md.otf);
 }
 
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
 body {
     background: white;
     font-family : 'HelveticaNeueLTStd-Cn';
