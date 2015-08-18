@@ -3,7 +3,7 @@ $(document).ready( function() {
 });
 
 $(window).on('resize', function() {
-   showModal.centerWindow();
+   controlModal.centerWindow();
 });
 
 var contentTabs =  {
