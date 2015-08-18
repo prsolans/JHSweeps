@@ -23,6 +23,11 @@
     src         : url(fonts/HelveticaNeueLTStd-Md.otf);
 }
 
+@font-face {
+    font-family : 'CaeciliaLTStd-Italic';
+    src         : url(fonts/CaeciliaLTStd-Italic.otf);
+}
+
 html {
     -webkit-font-smoothing: antialiased;
 }
@@ -220,7 +225,7 @@ button, input[type=submit] {
 
 .content .tab-content a {
     color: #008954;
-    font-family: 'PMNCaeciliaW01-46LightI';
+    font-family: 'CaeciliaLTStd-Italic';
     text-decoration: underline;
 }
 
