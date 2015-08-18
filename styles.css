@@ -1,7 +1,31 @@
+@font-face {
+    font-family : 'HelveticaNeueLTStd-Cn';
+    src         : url(fonts/HelveticaNeueLTStd-Cn.otf);
+}
+
+@font-face {
+    font-family : 'HelveticaNeueLTStd-BdCn';
+    src         : url(fonts/HelveticaNeueLTStd-BdCn.otf);
+}
+
+@font-face {
+    font-family : 'HelveticaNeueLTStd-Roman';
+    src         : url(fonts/HelveticaNeueLTStd-Roman.otf);
+}
+
+@font-face {
+    font-family : 'HelveticaNeueLTStd-Bd';
+    src         : url(fonts/HelveticaNeueLTStd-Bd.otf);
+}
+
+@font-face {
+    font-family : 'HelveticaNeueLTStd-Md';
+    src         : url(fonts/HelveticaNeueLTStd-Md.otf);
+}
+
 body {
     background: white;
-    font-family : 'Benton Sans';
-    /*font-family: 'HelveticaNeueW01-67MdCn 692710';*/
+    font-family : 'HelveticaNeueLTStd-Cn';
     margin: 0;
 }
 
@@ -46,7 +70,7 @@ button, input[type=submit] {
 
 .content .hero .form h2 {
     color: #13814f;
-    font-family: 'HelveticaNeueW01-77BdCn 692722';
+    font-family: 'HelveticaNeueLTStd-BdCn';
     font-size: 30px;
     text-transform: uppercase;
 
@@ -58,7 +82,7 @@ button, input[type=submit] {
 }
 
 .content .hero .form form label {
-    font-family: 'HelveticaNeueW01-77BdCn 692722';
+    font-family: 'HelveticaNeueLTStd-Roman';
     font-size: 12px;
 }
 
@@ -66,6 +90,7 @@ button, input[type=submit] {
     border-radius : 0;
     font-size: 12px;
     height: 25px;
+    line-height: 10px;
     padding: 13px 15px;
     resize: none;
     -webkit-appearance: none;
@@ -97,6 +122,11 @@ button, input[type=submit] {
     width: auto;
 }
 
+.content .hero .form form p.project {
+    font-family: 'HelveticaNeueLTStd-Bd';
+    font-size: 14px;
+}
+
 .content .prizes {
     color: #58595b;
     height: 148px;
@@ -117,7 +147,7 @@ button, input[type=submit] {
 
 .content .prizes .prize h3 {
     color: #58595b;
-    font-family: 'HelveticaNeueW01-77BdCn 692722';
+    font-family: 'HelveticaNeueLTStd-BdCn';
     font-size: 16px;
     line-height: 18px;
     margin: 0;
@@ -135,13 +165,13 @@ button, input[type=submit] {
 
 .content .prizes .grandprize .large-green {
     color: #13814f;
-    font-family: 'HelveticaNeueW01-77BdCn 692722';
+    font-family: 'HelveticaNeueLTStd-BdCn';
     font-size: 31px;
 }
 
 .content .prizes .grandprize .small-green {
     color: #13814f;
-    font-family: 'HelveticaNeueW01-77BdCn 692722';
+    font-family: 'HelveticaNeueLTStd-BdCn';
     font-size: 18px;
 }
 
@@ -162,9 +192,10 @@ button, input[type=submit] {
     color: #c5b283;
     cursor: pointer;
     display: inline-block;
-    font-size: 15pt;
+    font-family: 'HelveticaNeueLTStd-Bd';
+    font-size: 15px;
     height: 32px;
-    line-height: 32px;
+    line-height: 37px;
     list-style: none;
     margin: 0;
     text-align: center;
@@ -178,6 +209,9 @@ button, input[type=submit] {
 
 .content .tab-content {
     display: none;
+    font-family: 'HelveticaNeueLTStd-Cn';
+    font-size: 18px;
+
 }
 
 .content .tab-content a {
@@ -188,9 +222,14 @@ button, input[type=submit] {
 
 .content .tab-content h4 {
     color: #13814f;
-    font-family: 'HelveticaNeueW01-67MdCn 692710';
+    font-family: 'HelveticaNeueLTStd-BdCn';
     font-size: 18px;
     margin-top: 0;
+}
+
+.content .tab-content span.strong {
+    font-family: 'HelveticaNeueLTStd-Bd';
+    margin-top: 10px;
 }
 
 .content .tab-content.active {
@@ -200,6 +239,7 @@ button, input[type=submit] {
 .content .tab-content .third {
     color: #58595b;
     display: inline-block;
+    font-family: 'HelveticaNeueLTStd-Roman';
     font-size: 14px;
     padding-right: 3%;
     width: 31%;
@@ -265,14 +305,14 @@ button, input[type=submit] {
     padding-top: 28px;
 }
 
-.content .fineprint {
+.content .fineprint, .content .footer {
+    font-family: 'HelveticaNeueLTStd-Md';
     font-size: 9px;
     line-height: 13px;
 }
 
-.content .footer {
-    font-size: 9px;
-    line-height: 13px;
+.content .fineprint strong, .content .footer strong {
+    font-family: 'HelveticaNeueLTStd-Bd';
 }
 
 .content .footer .copyright {
