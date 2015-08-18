@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+
+    <script type="text/javascript" src="//fast.fonts.net/jsapi/fba1382f-c7a6-41e8-9d9e-4d9574b45678.js"></script>
+    <link href="//cloud.webtype.com/css/cb1441ab-8419-4bce-92c7-9ab990a4c354.css" rel="stylesheet" type="text/css" />
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+<div class="content">
+    <div class="hero">
+        <div class="form">
+            <img src="images/logo.png"/>
+
+            <h2>Enter Now</h2>
+
+            <form action="http://info.jameshardie.com/index.php/leadCapture/save" id="mktForm_1099" name="mktForm_1099" method="post" enctype="multipart/form-data">
+
+                <div id="messageBox1">
+                    <!-- error messages -->
+                    <div id="firstname_error" class="error tooltip" style="display: block;">
+                        <label for="firstname">Please enter your first name.</label>
+                    </div>
+
+                    <div id="lastname_error" class="error tooltip" style="display: none;">
+                        <label for="lastname">Please enter your last name.</label>
+                    </div>
+
+                    <div id="email_error" class="error tooltip" style="display: none;">
+                        <label for="email">Please enter your email address.</label>
+                    </div>
+
+                    <div id="email_error2" class="error tooltip" style="display: none;">
+                        <label for="email">Your email address appears to be invalid. Please correct this before continuing.</label>
+                    </div>
+
+                    <div id="tel_error" class="error tooltip" style="display: none;">
+                        <label for="tel">Please enter your telephone number.</label>
+                    </div>
+
+                    <div id="street_error" class="error tooltip" style="display: none;">
+                        <label for="street">Please enter your street address information.</label>
+                    </div>
+
+                    <div id="city_error" class="error tooltip" style="display: none;">
+                        <label for="city">Please enter your city.</label>
+                    </div>
+
+                    <div id="state_error" class="error tooltip" style="display: none;">
+                        <label for="State">Please enter your state.</label>
+                    </div>
+
+                    <div id="zip_error" class="error tooltip" style="display: none;">
+                        <label for="Postal Code">Please enter your zip code.</label>
+                    </div>
+
+                    <div id="repair_error" class="error tooltip" style="display: none;">
+                        <label for="repair">Please indicate your answer by selecting one of the buttons.</label>
+                    </div>
+
+                    <div id="att_error" class="error tooltip" style="display: none;">
+                        <label for="att">You must agree to the official rules to continue. Please check this box to indicate as such.</label>
+                    </div>
+
+                </div>
+
+                <p>
+                    <input type="text" id="firstname" name="FirstName" class="input_large" tabindex="1"><label for="firstname" class="normal">First Name</label></p>
+
+                <p>
+                    <input type="text" id="lastname" name="LastName" class="input_large" tabindex="2"><label for="lastname" class="normal">Last Name</label></p>
+
+                <p>
+                    <input type="email" id="email" name="Email" class="input_large" tabindex="3"><label for="email" class="normal">Email</label></p>
+
+                <p>
+                    <input type="tel" id="tel" name="Phone" class="input_large" tabindex="4"><label for="tel" class="normal">Phone</label></p>
+
+                <p>
+                    <input type="street" id="street" name="Address" class="input_large" tabindex="5"><label for="street" class="normal">Street</label></p>
+
+                <p class="city">
+                    <input type="text" id="city" name="City" class="input_large" tabindex="6"><label for="city" class="normal">City</label></p>
+
+                <p class="state">
+                    <select id="state" name="State" tabindex="7">
+                        <option value="" selected="">--</option>
+                        <option value="AL">AL</option>
+                        <option value="AK">AK</option>
+                        <option value="AZ">AZ</option>
+                        <option value="AR">AR</option>
+                        <option value="CA">CA</option>
+                        <option value="CO">CO</option>
+                        <option value="CT">CT</option>
+                        <option value="DC">DC</option>
+                        <option value="DE">DE</option>
+                        <option value="FL">FL</option>
+                        <option value="GA">GA</option>
+                        <option value="HI">HI</option>
+                        <option value="ID">ID</option>
+                        <option value="IL">IL</option>
+                        <option value="IN">IN</option>
+                        <option value="IA">IA</option>
+                        <option value="KS">KS</option>
+                        <option value="KY">KY</option>
+                        <option value="LA">LA</option>
+                        <option value="ME">ME</option>
+                        <option value="MD">MD</option>
+                        <option value="MA">MA</option>
+                        <option value="MI">MI</option>
+                        <option value="MN">MN</option>
+                        <option value="MS">MS</option>
+                        <option value="MO">MO</option>
+                        <option value="MT">MT</option>
+                        <option value="NE">NE</option>
+                        <option value="NV">NV</option>
+                        <option value="NH">NH</option>
+                        <option value="NJ">NJ</option>
+                        <option value="NM">NM</option>
+                        <option value="NY">NY</option>
+                        <option value="NC">NC</option>
+                        <option value="ND">ND</option>
+                        <option value="OH">OH</option>
+                        <option value="OK">OK</option>
+                        <option value="OR">OR</option>
+                        <option value="PA">PA</option>
+                        <option value="RI">RI</option>
+                        <option value="SC">SC</option>
+                        <option value="SD">SD</option>
+                        <option value="TN">TN</option>
+                        <option value="TX">TX</option>
+                        <option value="UT">UT</option>
+                        <option value="VT">VT</option>
+                        <option value="VA">VA</option>
+                        <option value="WA">WA</option>
+                        <option value="WV">WV</option>
+                        <option value="WI">WI</option>
+                        <option value="WY">WY</option>
+                    </select><br/><label for="state" class="normal">State</label>
+                </p>
+
+                <p class="zip_win">
+                    <input type="text" id="Postal Code" name="Postal Code" class="input_small zip" tabindex="8"><br/><label for="Postal Code">Zip Code</label></p>
+
+                <p class="project">Are you planning an exterior repair or remodeling project in the next 6-12 months?</p>
+
+                <p class="right_radio">
+                    <input type="radio" id="yes" name="exterior_prroject_timing" value="1" tabindex="9">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="exterior_prroject_timing" value="0" tabindex="10">
+                    <label for="no">No</label></p>
+
+                <div class="clearfix"></div>
+
+                <p class="rules"><input type="checkbox" id="att" name="att" value="agreed" tabindex="11">
+                    <label for="att" class="rules_label">
+                        <strong>Rules Agreement:</strong> I have read and agree to be bound by the <a href="#" data-reveal-id="myModal" data-animation="fade">Official Rules</a> of the Hardie Home Outdoor Living
+                        Sweepstakes.
+                    </label>
+                </p>
+
+                <!-- hidden values -->
+                <input type="hidden" name="lpId" value="1979">
+                <input type="hidden" name="subId" value="148">
+                <input type="hidden" name="munchkinId" value="875-SNB-430">
+                <input type="hidden" name="kw" value="">
+                <input type="hidden" name="cr" value="">
+                <input type="hidden" name="searchstr" value="">
+                <input type="hidden" name="lpurl" value="http://info.jameshardie.com/13Q1_NAT_HO_NUR_PROMO_15Q4-Sweeps-LP.html?cr={creative}&amp;kw={keyword}">
+                <input type="hidden" name="formid" value="1099">
+                <input type="hidden" name="returnURL" value="http://jameshardiesweepstakes.com/thankyou.html">
+                <input type="hidden" name="retURL" value="http://jameshardiesweepstakes.com/thankyou.html">
+                <input type="hidden" name="returnLPId" value="-1">
+                <input type="hidden" name="_mkt_disp" value="return">
+                <input type="hidden" name="_mkt_trk" value="id:875-SNB-430&amp;token:_mch-jameshardiesweepstakes.com-1439570857349-14424">
+                <input type="hidden" name="Campaign_Number__c" id="Campaign_Number__c" value="00002">
+                <input type="hidden" name="LeadRole" value="Homeowner">
+                <input type="hidden" name="LeadSource" value="Ambassador - Non App">
+
+                <!-- Submit -->
+
+                <p><input type="submit" id="submitButton" value="Submit" class="submit_button" tabindex="12" onclick="send_data2();return false;">                <span class="required">All fields are required.</span>
+                </p>
+
+
+            </form>
+        </div>
+        <div class="cl"></div>
+
+    </div>
+    <div class="prizes">
+        <div class="grandprize prize"><h3>Grand Prize</h3><span class="large-green">$25,000</span><br/><span class="small-green">Home Exterior Makeover</span><br/>with sleek, strong James Hardie&reg; siding</div>
+        <div class="prize"><h3>3 First Place Prizes</h3>$500 Frontgate&reg; gift card <img src="images/prize-giftcard.jpg"/></div>
+        <div class="prize"><h3>10 Second Place Prizes</h3>$200 Frontgate&reg; gift card <img src="images/prize-giftcard.jpg"/></div>
+        <div class="prize"><h3>50 Third Place Prizes</h3>James Hardie Gardening Kit <img src="images/prize-kit.jpg"/></div>
+    </div>
+    <div class="cl"></div>
+    <div class="tabs">
+        <ul>
+            <li class="active" data-content="products">Our Products</li>
+            <li data-content="transformations">Transformations</li>
+            <li data-content="contractor">Find a Contractor</li>
+            <li data-content="offer">A Special Offer</li>
+        </ul>
+        <div class="tab-content active" id="products">
+            <div class="third"><img src="images/product-1.jpg"/><p><strong>Transforming homes every day</strong><br/>On over 5.5 million homes across the country, James Hardie® siding has made a beautiful difference to the way
+                    people live.</p>
+                <a href="http://www.jameshardie.com/homeowner/products.shtml?utm_source=JHSweepsWeb&utm_medium=button&utm_content=Tab1_Col1&utm_campaign=RR2015" target="_blank">Learn More ></a></div>
+            <div class="third"><img src="images/product-2.jpg"/><p><strong>Vinyl siding is no match for us</strong><br/>
+
+                James Hardie® fiber cement siding and trim offer craftsmanship and performance that are simply superior.</p>
+                <a href="http://www.jameshardie.com/homeowner/improveYourHome_why-settle-for-vinyl-siding.shtml?utm_source=JHSweepsWeb&utm_medium=textlink&utm_content=Tab1_Col2&utm_campaign=RR2015"
+                   target="_blank">Learn More ></a></div>
+            <div class="third last"><img src="images/product-3.jpg"/><p><strong>This investment looks really good</strong><br/>According to Remodeling magazine, re-siding your home with fiber cement siding is the #1 return on
+                    investment for upscale projects.*</p>
+                <a href="http://www.jameshardie.com/homeowner/improveYourHome_why-settle-for-vinyl-siding.shtml?utm_source=JHSweepsWeb&utm_medium=textlink&utm_content=Tab1_Col2&utm_campaign=RR2015" target="_blank">See
+                    the
+                    complete report ></a></div>
+        </div>
+        <div class="tab-content" id="transformations">
+            <div class="third"><img src="images/trans-1.jpg"/><p><strong>Beautiful transformations</strong><br/>See what James Hardie® siding has done for homeowners like you.</p>
+                <a href="http://www.jameshardie.com/homeowner/before-after.shtml?utm_source=JHSweepsWeb&utm_medium=textlink&utm_content=Tab2_Col1&utm_campaign=RR2015" target="_blank">See More Homes ></a></div>
+            <div class="third"><img src="images/trans-2.jpg"/><p><strong>ColorPlus&reg; Technology</strong><br/>Choose ColorPlus® Technology to add lasting beauty in 23 contemporary options.</p>
+                <a href="http://www.jameshardie.com/homeowner/products-colorplus.shtml?utm_source=JHSweepsWeb&utm_medium=button&utm_content=Tab2_Col2&utm_campaign=RR2015" target="_blank">Learn More ></a></div>
+            <div class="third last"><img src="images/trans-3.jpg"/><p><strong>Long-lasting good looks, less work</strong><br/>Discover how James Hardie siding stands up to every challenge.</p>
+                <a href="http://www.jameshardie.com/homeowner/2012-james-hardie-video.shtml?utm_source=JHSweepsWeb&utm_medium=button&utm_content=Tab2_Col3&utm_campaign=RR2015" target="_blank">Watch video ></a></div>
+        </div>
+        <div class="tab-content" id="contractor">
+            <div class="half">
+                <div class="tab-copy"><a href="http://contractors.jameshardie.com/?utm_source=JHSweepsWeb&utm_medium=image&utm_content=Tab3_Col1&utm_campaign=RR2015" target="_blank"><img src="images/contractor-map.jpg"/></a><a href="http://contractors.jameshardie.com/?utm_source=JHSweepsWeb&utm_medium=textlink&utm_content=Tab3_Col1&utm_campaign=RR2015" target="_blank"><h4>Find a James
+                    Hardie project in your
+                    area</h4></a></div>
+            </div>
+            <div class="half last">
+                <div class="tab-copy"><h5>Find a professional contractor near you</h5><label for="zipCode">Zip Code</label><br/>
+                    <input name="zipCode" id="zipCode">
+                    <button id="contractor-submit" onclick="locateContractor.routeTraffic();">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div class="tab-content" id="offer"><img src="images/offer-bg.png"/><h4>Request a quote now</h4>Take advantage of special pricing in your area and financing options that are perfect for you.
+            <button id="quote-request" onclick="requestQuote.routeTraffic();">Request a Quote</button>
+        </div>
+    </div>
+    <div class="fineprint"><p><span class="uppercase">No purchase or entry fee necessary to enter or win. A purchase will not increase your chances of winning:</span> Subject to Official Rules at
+        <a href="http://www.jameshardiesweepstakes.com" target="_blank">http://www.jameshardiesweepstakes.com</a>.
+        <strong>Eligibility:</strong>
+        Open to owners of single family detached homes residing in MN, IL, MA, NC, NJ and Washington DC/Baltimore area, 21 years of age or older. Void where prohibited by law. <strong>Entry Period:</strong> 12/1/14 through
+        11/30/15
+        for December
+        1, 2015 drawing, and 12/1/15 through 11/30/16 for December 1, 2016 drawing. <strong>Drawing:</strong> The first drawing will be held on December 1, 2015 for the previous 12-month entry period (12/1/14-11/30/15). A
+            second drawing
+        will be held on December 1, 2016 for the previous 12-month entry period (12/1/15-11/30/16). <strong>Odds:</strong> Odds of winning depend upon number of eligible entries received. <strong>Prizes:</strong> Prizes to be
+                                                                                                                                                                                                         awarded
+        at each
+                                                                                                               drawing: one
+        (1) Grand Prize consisting of a home exterior makeover with approximate retail value (“ARV”) of up to $25,000 in James Hardie® siding and trim including labor; three (3) First Place Prizes of a $500 Frontgate®
+        gift card; ten (10) Second Place Prizes of a $200 Frontgate® gift card; and fifty (50) Third Place Prizes of a James Hardie merchandised product (ARV of $30). <strong>Conditions:</strong> Grand Prize winners must, and
+                                                                                                                                                                                          other
+        winners may be required to, submit a notarized Affidavit of Eligibility, Liability and Public Release, among additional documents. Winners can only win once. <strong>Winner List:</strong> For a list of winners, send a
+        self-addressed, stamped envelope to Hardie Home Outdoor Living Sweepstakes, James Hardie Building Products Inc., 26300 La Alameda, Suite 400, Mission Viejo, CA 92691. Sponsor: James Hardie Building Products Inc.,
+        231 S. LaSalle St., Suite 2000, Chicago, IL 60604.
+
+        <p>*Fiber cement siding replacement is the highest percentage of cost recouped for projects in the ‘upscale’ category. 2015 Hanley Wood, LLC. Excerpted with permission. Complete data from the Remodeling 2014-2015
+            Cost vs. Value Report is available at www.costvsvalue.com
+    </div>
+    <div class="footer">
+        <div class="copyright"><p>For official rules, please click <a onclick="controlModal.displayWindow();">here</a>.<br/>
+            <a href="http://www.jameshardie.com/About-Us/Terms-Conditions?utm_source=jh-cbd-email&utm_medium=jhbp-012-sweeps&utm_campaign=jh-com-terms">Terms & Conditions</a> | <a href="http://www.jameshardie.com/About-Us/Privacy?utm_source=jh-cbd-email&utm_medium=jhbp-012-sweeps&utm_campaign=jh-com-privacy">Privacy Policy</a><br/>
+            © 2015 James Hardie Building Products, Inc. All right reserved. Frontgate is a registered trademark of Cinmar, LLC.</div>
+        <div class="contact">1-866-302-3865<img src="images/social.jpg" usemap="#social"/></div>
+    </div>
+    <div class="dim"></div>
+
+    <div id="rulesModal" class="reveal-modal">
+        <h2>James Hardie “Hardie Home Outdoor Living”<br> Sweepstakes - Official Rules</h2>
+        <p> </p>
+
+        <div id="officalRules">
+
+            <ol type="1">
+                <li>NO PURCHASE NECESSARY TO ENTER OR WIN. A PURCHASE WILL NOT INCREASE YOUR ODDS OF WINNING. VOID WHERE PROHIBITED OR OTHERWISE RESTRICTED BY LAW.</li>
+                <li><strong>ELIGIBILITY</strong>: Except where regulated or restricted by law, the James Hardie® “Hardie Home Outdoor Living” Sweepstakes (“Sweepstakes”) is open only to homeowners residing in Minnesota, Illinois, Massachusetts, North Carolina, New Jersey and the Washington D.C./Baltimore area (the “Promotion Area”) who are 21 years of age or older at the time of entry. Entrants must be the legal owner of and occupying a residential single family detached home in the Promotion Area having vinyl, wood or aluminum siding, having wood frame construction with stud spacing no greater than 24 inches on center and which complies with the installation requirements set forth in the James Hardie® HardiePlank® Lap Siding Installation Instructions (“HardiePlank® Installation Requirements”). Homes having brick, stucco and asbestos siding are expressly excluded from eligibility in the Sweepstakes. For a copy of the HardiePlank® Installation Requirements, log onto <a href="http://www.jameshardie.com/homeowner/helpSupport_instructions.shtml" target="_blank">http://www.jameshardie.com/homeowner/helpSupport_instructions.shtml</a>. Employees, retirees, and agents of the Sponsor, James Hardie Building Products, Inc. (“Sponsor” or “James Hardie®”), its subsidiaries, affiliates, agencies, distributors, wholesalers and retailers, and members of such employees' immediate families and individuals living in the same household with such employees, are not eligible to win.</li>
+                <li><strong>PROMOTION PERIOD</strong> For the 2015 Sweepstakes, the Promotion Period begins at 12:00:00 a.m. central standard time (“CST”) on December 1, 2014 and ends at 11:59 p.m. central daylight time (“CDT”) on November 30, 2015 (“Promotion Period”). For the 2016 Sweepstakes, the Promotion Period begins at 12:00:00 a.m. central standard time (“CST)” on December 1, 2015 and ends at 11:59 p.m. central daylight time (“CDT”) on November 30, 2016 (“Promotion Period”). There will be one (1) random drawing from all eligible entries received during each  Promotion Period (the “Drawing”).  The Drawing for the 2015 Sweepstakes will be held on December 1, 2015.  The Drawing for the 2016 Sweepstakes will be held on December 1, 2016.</li>
+                <li><strong>TO ENTER</strong>: : There are three ways to enter the Sweepstakes.  All entries become the exclusive property of Sponsor and will not be acknowledged nor will they be returned. <u>Limit one entry per household regardless of means of entry used.</u> The three ways to enter are as follows:
+                    <ol type="A">
+                        <li>Complete an entry form provided by a James Hardie employee – “Hardie Ambassador” or “Hardie Ambassador Manager” – who will be canvassing areas within the Promotion Area and attending local events and home shows during the Promotion Period in order to provide eligible individuals the opportunity to enter the Sweepstakes. The entry forms will include the following information: your name, address, zip code, age, day and evening phone numbers, email address and the year the home was built. Entries must be received during the Promotion Period.</li>
+                        <li>Log on to the website: <a href="http://www.jameshardiesweepstakes.com" target="_blank">http://www.jameshardiesweepstakes.com</a> during the 2015 or 2016 Promotion Period and follow the instructions to complete the Sweepstakes entry form, including your name, address, zip code, age, day and evening phone numbers, email address and the year the home was built. Online entries must be received during the Promotion Period.</li>
+                        <li>C.  Visit a James Hardie Building Products Trade Show Booth at one of the many trade shows, community events, or other community activities that James Hardie® attends during the Promotion Period and complete an electronic (via tablet) entry form, provide your name, address, zip code, age, day and evening phone numbers, and the year the home was built, sign the form and then enter it into an official entry box, OR mail the card in a stamped envelope to James Hardie Building Products, Inc., 26300 La Alameda, Suite 400, Mission Viejo, CA 92691. The entries must be received during the Promotion Period.</li>
+                    </ol>
+                </li>
+            </ol>
+            <ol type="1" start="5">
+                <li><strong>PRIZES AND CONDITIONS FOR AWARDING PRIZE</strong>: : For the Drawing, the following prizes will be awarded: one (1) grand prize (“Grand Prize”); three (3) first place prizes (“First Place Prizes”); ten (10) second place prizes (“Second Place Prizes”); and fifty (50) third place prizes (“Third Place Prizes”) (each a “Prize” and collectively, “Prizes”) will be randomly awarded to the winners (each a “Winner” and collectively, “Winners”). The Grand Prize (one Grand Prize will be awarded) consists of one (1) Home Exterior makeover with an approximate retail value ("ARV") of up to $25,000 in James Hardie® Exterior Siding, using up to 2,000 square feet of HardiePlank® Color Plus® siding in one of 20 locally available colors, including labor and installation plus up to 500 linear feet of HardieTrim® boards, and up to 350 square feet of HardieSoffit® and Fascia boards (“Siding”). No cash substitution or payment is permitted if Grand Prize Winner's home requires less than 2,000 square feet of HardiePlank® Color Plus® siding.  Grand Prize does not include, by way of example and not by limitation, replacement of window trim, additional accent trim beyond inside/outside corner post, soffit and fascia, porch soffit, or accessories such as shutters, vents, light blocks, decorative molding, posts and excludes painting and/or touching up anything other than the Siding.  Approximate Retail Value (“ARV”) of the Grand Prize: up to $25,000. The Grand Prize Winner will receive a voucher for the Grand Prize, and the Grand Prize Winner must make arrangements with a preferred installer specified by James Hardie® to accept delivery and installation of the Grand Prize during normal business hours no later than 3 months from the date of prize notification. HardiePlank® Color Plus® siding specifications, delivery and installation for the Grand Prize are at the sole and complete discretion of James Hardie®. James Hardie® is not responsible for any pre-existing condition or defect existing on, within or in connection with the potential Grand Prize Winner's home, including by way of example and not by limitation, water or other weather damage, pests, wear and tear, construction or repair defects (“Pre-existing Condition”), and James Hardie® shall neither be required to repair any damage relating to any Pre-existing Condition, nor shall it be liable for any cost to repair any damage relating to any such Pre-existing Condition. Grand Prize Winner is responsible for any and all Homeowners’ Association and/or Architectural Review Board approvals if applicable. The Grand Prize Winner is responsible for obtaining any and all permits necessary or otherwise required to install the Grand Prize. Failure to comply with these Official Rules shall result in forfeiture of the Grand Prize. The First Place Prize is a $500 Gift Card from Frontgate® (three First Place Prizes will be awarded). The Second Place Prize is a $200 Gift Card from Frontgate® (ten Second Place Prizes will be awarded). The Third Place Prize is a James Hardie® merchandised product to be determined by James Hardie®, in its sole discretion (fifty Third Place Prizes will be awarded). The ARV of each Third Place Prize is $30.</li>
+
+                <li>Each Winner is responsible for all applicable federal, state and local taxes incurred by winning the Prize. To the extent required by law, Sponsor will provide a Winner with an IRS Form 1099 for the value of the applicable prize. <strong>The Grand Prize Winner is responsible for any applicable fees and all insurance and incidentals and any other unspecified expenses associated with acceptance or use of the Grand Prize.</strong> The Prizes are non-transferable, non-exchangeable, and non-refundable, and must be accepted by the Winner as awarded. No cash redemption or prize substitution allowed by the Winners, except as agreed to by Sponsor, in its sole discretion. Sponsor reserves the right to substitute a prize of equal or greater value if any of the Prizes are unavailable and/or undeliverable for any reason in the sole and complete discretion of Sponsor.</li>
+
+                <li><strong>PRIZE DRAWING AND WINNER NOTIFICATION</strong>: For the 2015 Sweepstakes, on December 1, 2015, one (1) Grand Prize Winner, three (3) First Place Winners, ten (10) Second Place Winners, and fifty (50) Third Place Winners will be randomly selected by the Sponsor from among all eligible entries received during the 2015 Promotion Period. The Drawing will be conducted by Sponsor or its representatives, whose decisions are final and binding in all matters relating to this Sweepstakes. The Prize Winners will be notified by phone, email and/or United States Postal Service overnight delivery service. The Grand Prize Winners must provide, and the other Prize Winners may be required to provide (in Sponsor's sole discretion), a valid I.D., proof of home ownership, proof of home owner's insurance, a valid Social Security number, a completed W-9 Form and a notarized Affidavit of Eligibility, Liability and Publicity Release, each of which must be completed, signed and returned within fourteen (14) days from date of issuance, or the Prize will be forfeited and awarded to an alternate winner. If the Prize notification or attempted notification is returned as undeliverable, the Prize will be forfeited and may be awarded to an alternate winner. By accepting a Prize, each Winner acknowledges compliance with these Official Rules.  For the 2016 Sweepstakes, on December 1, 2016, one (1) Grand Prize Winner, three (3) First Place Winners, ten (10) Second Place Winners, and fifty (50) Third Place Winners will be randomly selected by the Sponsor from among all eligible entries received during the 2016 Promotion Period. The Drawing will be conducted by Sponsor or its representatives, whose decisions are final and binding in all matters relating to this Sweepstakes. The Prize Winners will be notified by phone, email and/or United States Postal Service overnight delivery service. The Grand Prize Winners must provide, and the other Prize Winners may be required to provide (in Sponsor's sole discretion), a valid I.D., proof of home ownership, proof of home owner's insurance, a valid Social Security number, a completed W-9 Form and a notarized Affidavit of Eligibility, Liability and Publicity Release, each of which must be completed, signed and returned within fourteen (14) days from date of issuance, or the Prize will be forfeited and awarded to an alternate winner. If the Prize notification or attempted notification is returned as undeliverable, the Prize will be forfeited and may be awarded to an alternate winner. By accepting a Prize, each Winner acknowledges compliance with these Official Rules.</li>
+
+                <li><strong>ODDS</strong>: Odds of winning a Prize depend upon the number of eligible entries received during the Promotion Period.</li>
+
+                <li><strong>OFFICIAL RULES</strong>: Official Rules may be obtained by (i) logging onto the website, <a href="http://jameshardiesweepstakes.com" target="_blank">http://jameshardiesweepstakes.com</a>, or (ii) by sending a self-addressed, stamped envelope to “Hardie Home Outdoor Living Sweepstakes,” James Hardie® Building Products, Inc., 26300 La Alameda Suite 400, Mission Viejo, CA 92691.</li>
+
+                <li><strong>OTHER CONDITIONS</strong>: All federal, state and local laws and regulations apply. Sponsor reserves the right, in its sole discretion, to cancel, terminate, modify or suspend this Sweepstakes or any portion hereof, or to disqualify any individual implicated in any of the following actions, if for any reason: (a) infection by computer virus, bugs, tampering, unauthorized intervention, actions by entrants, fraud, technical failures, or any other causes which, in Sponsor’s sole opinion, corrupt or affect the administration, security, fairness, integrity or proper conduct of the Sweepstakes; (b) the Sweepstakes or any website associated therewith (or any portion thereof) becomes corrupted or does not allow the proper processing of entries per these rules; or (c) the Sweepstakes is otherwise not capable of running as planned. By entering, entrants agree to release and hold harmless Sponsor and its parent, subsidiaries, affiliates, divisions, advertising and promotional agencies, wholesalers and retailers, contractors, sub-contractors, and each of the foregoing entities' employees, officers, directors, shareholders and agents (collectively the “Released Parties”), from and against any and all claims, actions and/or liability for any injuries or death, loss or damage of any kind arising from or in connection with participation in and/or entry into the Sweepstakes or acceptance, delivery, or use of any Prize, including without limitation, the Grand Prize. The Released Parties are not responsible or liable for any incorrect or inaccurate entry information, and assume no responsibility for (i) typographical or other errors in the printing of the promotion materials or the offering or announcement of the prizes; (ii) any error, omission, interruption, defect or delay in operation or transmission at any website, (iii) failure of any entry to be received by Sponsor due to technical problems, human error or traffic congestion on the Internet or at any website, (iv) communications line, hardware and/or software failures, (v) damage to any computer (software or hardware) resulting from participation in the Sweepstakes, (vi) theft or destruction of, tampering with, unauthorized access to, or alteration of entries and/or entry information, or (vii) entries which are late, lost, stolen, damaged, illegible and/or unintelligible (or any combination thereof). By entering, entrants agree to comply with these Official Rules. Any entrant who attempts to tamper with this Sweepstakes in any way shall be disqualified. In the event of dispute as to who submitted an online entry, the entry will be deemed submitted by the Authorized Account Holder of the email address submitted at the time of entry. “Authorized Account Holder” is defined as the natural person assigned to an email address by an Internet access provider, on-line service provider or other organization responsible for assigning email addresses for the domain associated with the email address in question. Additional restrictions may apply.</li>
+
+                <li><strong>PUBLICITY RELEASE</strong>: Except where prohibited, by accepting a Prize, each Winner grants permission for Sponsor and its agents to use, publish, and reproduce, for all purposes, including publicity, promotion and advertising, in any media (including online, offline and radio), the Prize Winner's name, city, photograph, likeness, voice, image, and residence (both before and after receipt of the Prize), in perpetuity without further compensation, credit or right of review or approval.</li>
+
+                <li><strong>PRIVACY</strong>: Information submitted in connection with the Sweepstakes will be treated in accordance with these Official Rules and Sponsor's Privacy Policy (as may be amended from time to time), currently available at <a href="http://www.jameshardie.com/homeowner/privacy.shtml" target="_blank">http://www.jameshardie.com/homeowner/privacy.shtml</a>; provided that, in the event of any conflict between these Official Rules and such Privacy Policy, the terms and conditions of these Official Rules shall prevail.</li>
+
+                <li><strong>ARBITRATION/CHOICE OF LAW</strong>: Except where prohibited, entrants agree that any and all disputes, claims and causes of action arising out of or connected with this Sweepstakes shall be resolved exclusively by arbitration pursuant to the Rules of the American Arbitration Association then effective, and any and all claims, judgments and awards shall be limited to actual out-of-pocket costs incurred by entrant with regard to this Sweepstakes, but in no event attorneys' fees, punitive, incidental, consequential or other damages. All issues and questions concerning the construction, validity, interpretation and enforceability of these Official Rules, or the rights and obligations of entrants and Sponsor in connection with the Sweepstakes shall be governed by and construed in accordance with the laws of the State of California, without giving effect to any choice of law or conflict of law rules or provisions (whether of California or any other jurisdiction) that would cause the application of the laws of any jurisdiction other than California. The invalidity or unenforceability of any provision of these Official Rules shall not affect the invalidity or unenforceability of any other provision so long as the general intent of these Official Rules remains in effect. In the event that any such provision is determined to be invalid or otherwise unenforceable, these Official Rules shall be construed in accordance with their terms as if the invalid or unenforceable provision was not contained therein.</li>
+
+                <li><strong>WINNER LIST</strong>: For the winner list, send a self-addressed, stamped envelope to: “Hardie Home Outdoor Living Sweepstakes,” James Hardie Building Products, 26300 La Alameda Suite 400, Mission Viejo, CA 92691.</li>
+
+                <li><strong>SPONSOR</strong>: James Hardie Building Products, Inc., 231 S. LaSalle St. Suite 2000, Chicago, IL 60604</li>
+            </ol>
+        </div>
+
+        <a class="close-reveal-modal" onclick="controlModal.closeWindow()">Close Window</a>
+    </div>
+</div>
+
+<map name="social" id="social">
+    <area alt="" title="" href="https://twitter.com/james_hardie" target="_blank" shape="rect" coords="33,30,2,1" />
+    <area alt="" title="" href="https://www.facebook.com/JamesHardieBP" target="_blank" shape="rect" coords="38,1,69,29" />
+    <area alt="" title="" href="http://www.jameshardie.com/homeowner/2012-james-hardie-video.shtml?utm_source=jh-cbd-email&utm_medium=jhbp-012-sweeps&utm_campaign=jh-com-2012-jh-video" target="_blank" shape="rect" coords="107,31,77,2" />
+</map>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    // NORTON R&R GA Account
+    _gaq.push(['_setAccount', 'UA-39447315-2']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+</body>
+</html>
