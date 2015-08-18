@@ -274,7 +274,12 @@ button, input[type=submit] {
 }
 
 .content .tab-content .half.last #zipCode {
-    width: 300px
+    height: 25px;
+    width: 300px;
+}
+
+.content .tab-content .half.last button {
+    height: 28px;
 }
 
 .content .tab-content .half .tab-copy{
@@ -289,9 +294,15 @@ button, input[type=submit] {
 
 .content .tab-content .half.last .tab-copy{
     border-left: 1px solid #ccc;
+    font-family: 'HelveticaNeueLTStd-Bd';
+}
+
+.content .tab-content .half.last .tab-copy label {
+    font-size: 14px;
 }
 
 .content .tab-content .half.last .tab-copy h5{
+    font-size: 18px;
     margin-top: 0;
 }
 
