@@ -146,14 +146,14 @@
                 <p class="project">Are you planning an exterior repair or remodeling project in the next 6-12 months?</p>
 
                 <p class="right_radio">
-                    <input type="radio" id="yes" name="exterior_prroject_timing" value="1" tabindex="9">
+                <div class="radio-bg"><input type="radio" id="yes" name="exterior_prroject_timing" value="1" tabindex="9" class="custom-input"></div>
                     <label for="yes">Yes</label>
-                    <input type="radio" id="no" name="exterior_prroject_timing" value="0" tabindex="10">
+                <div class="radio-bg"><input type="radio" id="no" name="exterior_prroject_timing" value="0" tabindex="10" class="custom-input"></div>
                     <label for="no">No</label></p>
 
                 <div class="clearfix"></div>
 
-                <p class="rules"><input type="checkbox" id="att" name="att" value="agreed" tabindex="11">
+                <p class="rules"><div class="checkbox-bg"><input type="checkbox" id="att" name="att" value="agreed" tabindex="11" class="custom-input"></div>
                     <label for="att" class="rules_label">
                         <strong>Rules Agreement:</strong> I have read and agree to be bound by the <a href="#" data-reveal-id="myModal" data-animation="fade">Official Rules</a> of the Hardie Home Outdoor Living
                         Sweepstakes.
@@ -180,7 +180,9 @@
 
                 <!-- Submit -->
 
-                <p><input type="submit" id="submitButton" value="Submit" class="submit_button" tabindex="12" onclick="send_data2();return false;">                <span class="required">All fields are required.</span>
+                <p class="submit"><input type="submit" id="submitButton" value="Submit" class="submit_button" tabindex="12" onclick="send_data2();return false;">                <span class="required">All fields are
+                    required
+                    .</span>
                 </p>
 
 

@@ -106,6 +106,7 @@ button, input[type=submit] {
 }
 
 .content .hero .form p {
+    margin: 0;
 }
 
 .content .hero .form form p.city {
@@ -131,9 +132,18 @@ button, input[type=submit] {
     width: auto;
 }
 
+.content .hero .form form p.rules {
+    margin-top: 15px;
+}
+
 .content .hero .form form p.project {
     font-family: 'HelveticaNeueLTStd-Bd';
     font-size: 14px;
+    margin-top: 30px;
+}
+
+.content .hero .form form p.submit {
+    margin-top: 28px;
 }
 
 .content .prizes {
@@ -358,6 +368,26 @@ button, input[type=submit] {
 .content .footer a, .content .fineprint a {
     color: #008954;
     cursor: pointer;
+}
+
+.checkbox-bg, .radio-bg {
+    background-image: url(images/checkbox-off.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    vertical-align: middle;
+}
+
+.checkbox-bg {
+    float: left;
+    margin-bottom: 45px;
+}
+
+.custom-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .cl {

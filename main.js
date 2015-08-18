@@ -1,5 +1,13 @@
 $(document).ready( function() {
     contentTabs.init();
+
+    $('.checkbox-bg').on('click', function() {
+       inputDisplay.checkboxUpdate($(this));
+    });
+
+    $('.radio-bg').on('click', function() {
+       inputDisplay.radioUpdate($(this));
+    });
 });
 
 $(window).on('resize', function() {
@@ -55,6 +63,26 @@ var controlModal = {
     closeWindow: function() {
         $("#rulesModal").hide();
         $('.dim').css({'z-index': -1, 'opacity': '0'});
+    }
+}
+
+var inputDisplay = {
+    checkboxUpdate: function(bgElement) {
+        var checkbox = $(bgElement).find('input[type=checkbox]');
+        if(checkbox.is(':checked')){
+            $(bgElement).css('background-image', 'url(images/checkbox-on.png');
+        }
+        else{
+        $(bgElement).css('background-image', 'url(images/checkbox-off.png');}
+    },
+    radioUpdate: function(bgElement) {
+        var button = $(bgElement).find('input[type=radio]');
+        if(button.is(':checked')) {
+            $('.radio-bg').css('background-image', 'url(images/checkbox-off.png');
+            $(bgElement).css('background-image', 'url(images/checkbox-on.png');
+        }
+        else{
+            $(bgElement).css('background-image', 'url(images/checkbox-off.png');}
     }
 }
 
