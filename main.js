@@ -41,7 +41,10 @@ var locateContractor = {
 
 var requestQuote = {
     routeTraffic: function() {
-        location.href = 'http://www.jameshardieoffer.com/?utm_source=JHSweepsWeb&utm_medium=button&utm_content=Tab4_Col1&utm_campaign=RR2015';
+        window.open(
+            'http://www.jameshardieoffer.com/?utm_source=JHSweepsWeb&utm_medium=button&utm_content=Tab4_Col1&utm_campaign=RR2015',
+            '_blank'
+            );
     }
 }
 
@@ -56,7 +59,9 @@ var controlModal = {
         });
     },
     centerWindow: function() {
-        var marginTop = ($(window).height()-600)/2;
+        var marginTop = $(document).scrollTop();
+
+        console.log(marginTop);
         var marginLeft = ($(window).width()-900)/2;
         $("#rulesModal").css({'left':marginLeft, 'top':marginTop});
     },
@@ -242,7 +247,8 @@ $(function submit_entry2() {
 });
 
 function send_data2() {
-    var url = "process.php"; // the script where you handle the form input.
+    console.log($('#mktForm_1099').serialize());
+    var url = "http://www.jameshardiesweepstakes.com/process.php"; // the script where you handle the form input.
     var testing = false;
     $.ajax({
         type: "POST",
