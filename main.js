@@ -248,7 +248,7 @@ $(function submit_entry2() {
 
 function send_data2() {
     console.log($('#mktForm_1099').serialize());
-    var url = "http://www.jameshardiesweepstakes.com/process.php"; // the script where you handle the form input.
+    var url = "process.php"; // the script where you handle the form input.
     var testing = false;
     $.ajax({
         type: "POST",
