@@ -262,6 +262,7 @@ button, input[type=submit] {
     display: inline-block;
     font-family: 'HelveticaNeueLTStd-Roman';
     font-size: 14px;
+    line-height: 20px;
     padding-right: 3%;
     width: 31%;
     vertical-align: top;
