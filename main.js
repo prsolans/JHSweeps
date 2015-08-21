@@ -84,29 +84,42 @@ var inputDisplay = {
     checkboxUpdate: function(bgElement) {
 
         var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
+        var is_safari = navigator.userAgent.indexOf("Safari") > -1;
 
-        if(is_chrome) {
+
+
+        if(is_chrome || is_safari) {
 
             var checkbox = $(bgElement).find('input[type=checkbox]');
             if (checkbox.is(':checked')) {
-                $(bgElement).css('background-image', 'url(images/checkbox-on.png');
+
+                $(bgElement).addClass('checkbox-on');
+                $(bgElement).removeClass('checkbox-off');
+
             }
             else {
-                $(bgElement).css('background-image', 'url(images/checkbox-off.png');
+                $(bgElement).removeClass('checkbox-on');
+                $(bgElement).addClass('checkbox-off');
+
             }
         }
     },
     radioUpdate: function(bgElement) {
         var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
+        var is_safari = navigator.userAgent.indexOf("Safari") > -1;
 
-        if(is_chrome) {
+        if(is_chrome || is_safari) {
             var button = $(bgElement).find('input[type=radio]');
             if (button.is(':checked')) {
-                $('.radio-bg').css('background-image', 'url(images/checkbox-off.png');
-                $(bgElement).css('background-image', 'url(images/checkbox-on.png');
+                $('.radio-bg').addClass('checkbox-off');
+                $(bgElement).addClass('checkbox-on');
+                $(bgElement).removeClass('checkbox-off');
+
             }
             else {
-                $(bgElement).css('background-image', 'url(images/checkbox-off.png');
+                $(bgElement).addClass('checkbox-off');
+                $(bgElement).removeClass('checkbox-on');
+
             }
         }
     }

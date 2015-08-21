@@ -100,9 +100,11 @@ button, input[type=submit] {
     font-size: 12px;
     height: 25px;
     line-height: 10px;
-    padding: 13px 15px;
+    margin-top: 7px;
+    padding: 10px 15px 19px 15px;
     resize: none;
-    -webkit-appearance: none;
+    width: 60px;
+    /*-webkit-appearance: none;*/
 }
 
 .content .hero .form p {
@@ -399,6 +401,14 @@ button, input[type=submit] {
 .checkbox-bg {
     float: left;
     margin-bottom: 45px;
+}
+
+.checkbox-on {
+    background-image: url(images/checkbox-on.png);
+}
+
+.checkbox-off {
+    background-image: url(images/checkbox-off.png);
 }
 
 .custom-input {
