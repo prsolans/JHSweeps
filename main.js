@@ -8,6 +8,15 @@ $(document).ready( function() {
     $('.radio-bg').on('click', function() {
        inputDisplay.radioUpdate($(this));
     });
+
+    $('.beforeAfter').hover(
+        function() {
+            $(this).attr('src', 'images/trans-1-after.jpg');
+        },
+        function() {
+            $(this).attr('src', 'images/trans-1.jpg');
+        }
+    );
 });
 
 $(window).on('resize', function() {
@@ -73,21 +82,33 @@ var controlModal = {
 
 var inputDisplay = {
     checkboxUpdate: function(bgElement) {
-        var checkbox = $(bgElement).find('input[type=checkbox]');
-        if(checkbox.is(':checked')){
-            $(bgElement).css('background-image', 'url(images/checkbox-on.png');
+
+        var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
+
+        if(is_chrome) {
+
+            var checkbox = $(bgElement).find('input[type=checkbox]');
+            if (checkbox.is(':checked')) {
+                $(bgElement).css('background-image', 'url(images/checkbox-on.png');
+            }
+            else {
+                $(bgElement).css('background-image', 'url(images/checkbox-off.png');
+            }
         }
-        else{
-        $(bgElement).css('background-image', 'url(images/checkbox-off.png');}
     },
     radioUpdate: function(bgElement) {
-        var button = $(bgElement).find('input[type=radio]');
-        if(button.is(':checked')) {
-            $('.radio-bg').css('background-image', 'url(images/checkbox-off.png');
-            $(bgElement).css('background-image', 'url(images/checkbox-on.png');
+        var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
+
+        if(is_chrome) {
+            var button = $(bgElement).find('input[type=radio]');
+            if (button.is(':checked')) {
+                $('.radio-bg').css('background-image', 'url(images/checkbox-off.png');
+                $(bgElement).css('background-image', 'url(images/checkbox-on.png');
+            }
+            else {
+                $(bgElement).css('background-image', 'url(images/checkbox-off.png');
+            }
         }
-        else{
-            $(bgElement).css('background-image', 'url(images/checkbox-off.png');}
     }
 }
 

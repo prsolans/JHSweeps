@@ -377,13 +377,18 @@ button, input[type=submit] {
 }
 
 .checkbox-bg, .radio-bg {
-    background-image: url(images/checkbox-off.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: inline-block;
-    height: 32px;
-    width: 32px;
-    vertical-align: middle;
+    background-size   : cover;
+    background-repeat : no-repeat;
+    display           : inline-block;
+    height            : 32px;
+    width             : 32px;
+    vertical-align    : middle;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .checkbox-bg, .radio-bg {
+        background-image  : url(images/checkbox-off.png);
+    }
 }
 
 
@@ -398,7 +403,7 @@ button, input[type=submit] {
 
 .custom-input {
     -webkit-appearance: none;
-    -moz-appearance: none;
+    /*-moz-appearance: none;*/
 }
 
 .cl {
